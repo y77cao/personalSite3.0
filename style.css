@@ -1,0 +1,50 @@
+       body {
+				background-color: #000000;
+				margin: 0px;
+				overflow: hidden;
+				color:#ffffff;
+				font-family: 'Poiret One', cursive;
+			}
+
+			a {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			.nav {
+				z-index: 999;
+				position: absolute;
+				top: 10%; 
+				left: 10%; 
+
+			}
+
+			.intro {
+				position: absolute; 
+				left: 0; 
+				right: 0; 
+				top: 0; 
+				bottom: 0; 
+				margin: auto;
+				top: 30%;
+				text-align: center;
+			}
+
+			.intro div {
+				font-size: 5em;
+			}
+
+			.intro p {
+				position: absolute; 
+				left: 0; 
+				right: 0; 
+				top: 0; 
+				bottom: 0; 
+				margin: auto;
+				top: 50%;
+				font-size: 2em;
+			}
+
+			.nav div {
+				margin-top: 5%;
+			}
