@@ -6,27 +6,47 @@
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
 	</head>
 	<body>
-		<script src="./three.min.js"></script>
-		<script src="./Projector.js"></script>
-		<script src="./CanvasRenderer.js"></script>
-		<script src="./wavingParticlesCanvas.js"></script>
-		<div class="canvas"></div>
-		<div class="nav">
-			<div><a href="">Development Projects</a></div>
-			<div><a href="">Design Projects</a></div>
-			<div><a href="">About</a></div>
-			<div><a href="">Contact</a></div>
-			<div><a href="">Resume</a></div>
+	    <div class="nav">
+	        <div class="logo"></div>
+			<div class="nav-dev">Development Projects</div>
+			<div class="nav-design">Design Projects</div>
+			<div class="nav-about">About</div>
+			<div class="nav-contact">Contact</div>
+			<div class="nav-resume">Resume</div>
 		</div>
-		<div class="intro">
-		    <div>YUJIA CAO</div>
-		    <p>Developer | Designer</p>
-		</div>
+		<div class="swiper-container-1">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide main">
+		        <div id="canvas"></div>
+		        <div class="intro">
+		            <div>YUJIA CAO</div>
+		            <p>Developer | Designer</p>
+		        </div>
+            </div>
+            
+            <div class="swiper-slide dev" ></div>
+            <div class="swiper-slide design" ></div>
+            <div class="swiper-slide about" ></div>
+            <div class="swiper-slide contact" ></div>
+        </div>
+    </div>
+
+    <script src="./three.min.js"></script>
+    <script src="./Projector.js"></script>
+	<script src="./CanvasRenderer.js"></script>
+	<script src="./wavingParticlesCanvas.js"></script>
+	<script src="./script.js"></script>
+
+    <script>
+    var swiper1 = new Swiper('.swiper-container-1', {
+        effect: 'fade'
+    });
+    </script>
 	</body>
 </html>

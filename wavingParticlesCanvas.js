@@ -1,4 +1,4 @@
-            var SEPARATION = 100, AMOUNTX = 50, AMOUNTY = 50;
+            var SEPARATION = 50, AMOUNTX = 50, AMOUNTY = 50;
 			var container, stats;
 			var camera, scene, renderer;
 			var particles, particle, count = 0;
@@ -10,15 +10,15 @@
 			animate();
 
 			function init() {
-				container = document.getElementByClassName('canvas');
-				document.body.appendChild( container );
+				container = document.getElementById('canvas');
+				//document.body.appendChild( container );
 				camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 1, 10000 );
 				camera.position.z = 1000;
 				scene = new THREE.Scene();
 				particles = new Array();
 				var PI2 = Math.PI * 2;
 				var material = new THREE.SpriteCanvasMaterial( {
-					color: 0xffffff,
+					color: 0x99f9ff,
 					program: function ( context ) {
 						context.beginPath();
 						context.arc( 0, 0, 0.5, 0, PI2, true );
@@ -37,7 +37,7 @@
 				}
 				renderer = new THREE.CanvasRenderer();
 				renderer.setPixelRatio( window.devicePixelRatio );
-				renderer.setSize( window.innerWidth , window.innerHeight );
+				renderer.setSize( container.offsetWidth , container.offsetHeight );
 				container.appendChild( renderer.domElement );
 				document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 				document.addEventListener( 'touchstart', onDocumentTouchStart, false );
@@ -89,12 +89,12 @@
 				for ( var ix = 0; ix < AMOUNTX; ix ++ ) {
 					for ( var iy = 0; iy < AMOUNTY; iy ++ ) {
 						particle = particles[ i++ ];
-						particle.position.y = ( Math.sin( ( ix + count ) * 0.3 ) * 50 ) +
-							( Math.sin( ( iy + count ) * 0.5 ) * 50 );
-						particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.3 ) + 1 ) * 4 +
-							( Math.sin( ( iy + count ) * 0.5 ) + 1 ) * 4;
+						particle.position.y = ( Math.sin( ( ix + count ) * 0.5 ) * 70 ) +
+							( Math.sin( ( iy + count ) * 0.5 ) * 70 );
+						particle.scale.x = particle.scale.y = ( Math.sin( ( ix + count ) * 0.6 ) + 1 ) * 4 +
+							( Math.sin( ( iy + count ) * 1.1 ) + 1 ) * 4;
 					}
 				}
 				renderer.render( scene, camera );
-				count += 0.1;
+				count += 0.05;
 			}

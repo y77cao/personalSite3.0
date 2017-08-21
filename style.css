@@ -11,12 +11,69 @@
 				text-decoration: none;
 			}
 
+			.swiper-container-1, .swiper-wrapper, .swiper-slide {
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             background-color: #000;
+            }
+
+			#canvas {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+			}
+
+
 			.nav {
 				z-index: 999;
 				position: absolute;
-				top: 10%; 
+				top: 3%; 
 				left: 10%; 
+				width: 20%;
+			}
 
+		    .nav>div {
+				transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+			}
+
+			.nav>div:hover:not(:first-child) {
+			    color: #99f9ff;
+				margin-left: 5%;
+				transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+			}
+
+			.logo {
+				width: 50px;
+				height: 50px;
+				background-image: url("./tri.png");
+				background-size: cover;
+				transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
+			}
+
+			.logo:hover {
+				-webkit-transform: rotate(180deg);
+                -moz-transform: rotate(180deg);
+                -o-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
+                transform: rotate(180deg);
+                transition: all 1s ease;
+                -moz-transition: all 1s ease;
+                -webkit-transition: all 1s ease;
+                -o-transition: all 1s ease;
+                -ms-transition: all 1s ease;
 			}
 
 			.intro {
