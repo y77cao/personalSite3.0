@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="./style.css">
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
@@ -35,28 +36,53 @@
                      <div class="swiper-wrapper">
                            <div class="swiper-slide dev-slide-1">
                            	  <div>Colordoscope</div>
-                           	  <div>Colordoscope is an intelligent image search engine that analyse input image and provide image search results with similar content and color tone. </div>
+                           	  <img src="">
                            </div>
                            <div class="swiper-slide dev-slide-2">
                            	  <div>GiveMeSomething</div>
-                           	  <div>GiveMeSomething is a web app that provides movie suggestions based on user’s needs or feelings based on input syntax “Give me something  ____” or “I am feeling ____ today”. </div>
+                           	  <img src="">
                            </div>
                            <div class="swiper-slide dev-slide-3">
                            	  <div>TreeHollow</div>
-                           	  <div>TreeHollow is an online note board with post, in-line edit and delete functionalities. It supports drag-and-drop and free-arrangement for notes to add extra fun. </div>
+                           	  <img src="">
                            </div>
-                           <div class="swiper-slide">Slide 4</div>
-                           <div class="swiper-slide">Slide 5</div>
-                           <div class="swiper-slide">Slide 6</div>
-                           <div class="swiper-slide">Slide 7</div>
+                           <div class="swiper-slide">
+                              <div>UWLife.com</div>
+                              <img src="">
+                           </div>
+                           <div class="swiper-slide">
+                           	  <div>ChamberCrawler3000</div>
+                           	  <img src="">
+                           </div>
                      </div>
-                     <div class="swiper-pagination-2"></div>
+                     <div class="pagination-wrapper">
+                     	<div class="swiper-pagination-2"></div>
+                     </div>
                 </div>
              </div>
 
             <div class="swiper-slide design" ></div>
             <div class="swiper-slide about" ></div>
-            <div class="swiper-slide contact" ></div>
+            <div class="swiper-slide contact" >
+            	<form class="contact-form" action="https://formspree.io/yujiac8000@gmail.com">
+                      <label for="name">Name</label>
+                      <input class="form-control name" type="text" name="name" 
+                             required placeholder="Name">
+         
+                      <label for="email">Email</label>
+                      <input class="form-control email" type="email" name="_replyto"
+                             required placeholder="email@address.com">
+         
+                      <label for="message">Message</label>
+                      <textarea class="form-control message" name="message" placeholder="Message"
+                                required rows="5"></textarea>
+                      <input type="submit" value="Send">
+
+                      <input type="hidden" name="_next" value="./" />
+                      <input type="hidden" name="_subject" value="Contact from personal site" />
+                      <input type="hidden" name="_format" value="plain" />
+                  </form>
+            </div>
         </div>
     </div>
 
@@ -76,7 +102,7 @@
          slidesPerView: 1,
          mousewheelControl: true,
          pagination: '.swiper-pagination-2',
-         paginationType: 'fraction'
+         paginationType: 'fraction',
     });
     </script>
 	</body>
