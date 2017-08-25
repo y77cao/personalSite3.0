@@ -11,6 +11,24 @@
 				text-decoration: none;
 			}
 
+			::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                color:    #d8d8d8;
+            }
+            :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                color:    #d8d8d8;
+                opacity:  1;
+            }
+            ::-moz-placeholder { /* Mozilla Firefox 19+ */
+                color:    #d8d8d8;
+                opacity:  1;
+            }
+            :-ms-input-placeholder { /* Internet Explorer 10-11 */
+                color:    #d8d8d8;
+            }
+            ::-ms-input-placeholder { /* Microsoft Edge */
+                color:    #d8d8d8;
+            }
+
 			.swiper-container-1, .swiper-wrapper, .swiper-slide {
              width: 100%;
              height: 100%;
@@ -72,7 +90,7 @@
 				position: absolute;
 				top: 3%; 
 				left: 10%; 
-				width: 10%;
+				width: 15%;
 			}
 
 		    .nav>div {
@@ -150,12 +168,16 @@
 				margin-top: 5%;
 			}
 
+			.design {
+			    background-color: #000;
+			}
+
 			.about {
 				background-color: #000;
 			}
 
 			.contact form {
-				width: 40%;
+				width: 60%;
 				height: 40%;
 				position: absolute; 
 				left: 0; 
@@ -174,4 +196,55 @@
              .contact form * {
              	width: 100%;
              	margin: 1%;
+             	text-align: center;
+             }
+
+             .contact form input {
+             	border: none;
+             	font-family: 'Poiret One', cursive;
+             	font-size:1.2em;
+             }
+
+             .contact form input:focus {
+             	border: none;
+             	outline: none;
+             	border-bottom: 1px solid black;
+             }
+
+             .contact form textarea {
+             	border: none;
+             	font-family: 'Poiret One', cursive;
+             	font-size: 0.8em;
+             }
+
+             .contact form textarea:focus {
+             	border: none;
+             	outline: none;
+             	border: 1px solid black;
+             }
+
+             .result {
+             	text-align: center;
+             	position: absolute; 
+				left: 0; 
+				right: 0; 
+				top: 0; 
+				bottom: 0; 
+				margin: auto;
+				width: 100%;
+				height: 10%;
+             }
+
+             .result, form {
+             	display: block;
+             }
+
+             .fail, .success {
+             	position: absolute;
+             	left: 0; 
+				right: 0; 
+				top: 0; 
+				bottom: 0; 
+				margin: auto;
+				width: 100%;
              }

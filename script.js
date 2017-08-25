@@ -29,7 +29,7 @@ $(function() {
      $(".contact-form").submit(function(e) {
       var name = $('.name')
       var email = $('.email')
-      var message = $('#message')
+      var message = $('.message')
     
       if(name.val() == "" || email.val() == "" || message.val() == "") {
         $('.fail').fadeToggle(400);

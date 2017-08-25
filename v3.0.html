@@ -65,23 +65,26 @@
             <div class="swiper-slide about" ></div>
             <div class="swiper-slide contact" >
             	<form class="contact-form" action="https://formspree.io/yujiac8000@gmail.com">
-                      <label for="name">Name</label>
                       <input class="form-control name" type="text" name="name" 
                              required placeholder="Name">
          
-                      <label for="email">Email</label>
                       <input class="form-control email" type="email" name="_replyto"
                              required placeholder="email@address.com">
          
-                      <label for="message">Message</label>
                       <textarea class="form-control message" name="message" placeholder="Message"
-                                required rows="5"></textarea>
+                                required rows="4">Hey! So I saw your personal site and...</textarea>
                       <input type="submit" value="Send">
 
                       <input type="hidden" name="_next" value="./" />
                       <input type="hidden" name="_subject" value="Contact from personal site" />
                       <input type="hidden" name="_format" value="plain" />
                   </form>
+
+                  <div class="result">
+                   	<div class="fail">Oops...something happened. Message sending failed.</div>
+                    <div class="success">Message sent</div>
+                  </div>
+                  
             </div>
         </div>
     </div>
