@@ -64,6 +64,7 @@
             <div class="swiper-slide design" ></div>
             <div class="swiper-slide about" ></div>
             <div class="swiper-slide contact" >
+              <div class="contact-wrapper">
             	<form class="contact-form" action="https://formspree.io/yujiac8000@gmail.com">
                       <input class="form-control name" type="text" name="name" 
                              required placeholder="Name">
@@ -73,7 +74,7 @@
          
                       <textarea class="form-control message" name="message" placeholder="Message"
                                 required rows="4">Hey! So I saw your personal site and...</textarea>
-                      <input type="submit" value="Send">
+                      <input type="submit" value="Send" class="send">
 
                       <input type="hidden" name="_next" value="./" />
                       <input type="hidden" name="_subject" value="Contact from personal site" />
@@ -84,7 +85,8 @@
                    	<div class="fail">Oops...something happened. Message sending failed.</div>
                     <div class="success">Message sent</div>
                   </div>
-                  
+                </div>
+                <div id="canvas2"></div>
             </div>
         </div>
     </div>
