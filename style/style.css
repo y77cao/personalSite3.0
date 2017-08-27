@@ -167,13 +167,11 @@
 				width: 100%;
 				height: 100%;
 				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: 998;
 				color: #fff;
-				background-color: rgba(153,249,255,0.9);
-				display: none;
+				background-color: rgba(153,249,255,0.8);
+				/*display: none;*/
 			}
+			/*rgba(153,249,255,0.9);*/
 
 			.dev .overlay-container {
 				width: 100%;
@@ -212,6 +210,8 @@
 			}
 
 			.dev-1 {
+				width: 100%;
+				height: 100%;
 				background: url("../img/colordoscope.png") no-repeat center center;
 				background-size: cover;
 			}

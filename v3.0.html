@@ -11,6 +11,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.jquery.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 	</head>
 	<body>
 	    <div class="nav">
@@ -33,8 +34,9 @@
             
             <div class="swiper-slide dev" >
             	  <div class="dev-project-container clearfix">
-                           <div class="dev-box dev-1">
-                              <div class="overlay overlay1">
+                           <div class="dev-box flip-h">
+                              <div class="dev-1 front"></div>
+                              <div class="overlay overlay1 back">
                                 <div class="overlay-container">
                                    <div class="name">Colordoscope</div> 
                                    <div class="github"></div>
@@ -42,8 +44,9 @@
                                 </div>   
                               </div> 
                            </div>
-                           <div class="dev-box dev-2">
-                              <div class="overlay overlay2">
+                           <div class="dev-box flip-v">
+                              <div class="dev-2 front"></div>
+                              <div class="overlay overlay2 back">
                                 <div class="overlay-container">
                                   <div class="name">giveMeSomething</div> 
                                   <div class="github"></div>
@@ -51,8 +54,9 @@
                                 </div>
                               </div> 
                            </div>
-                           <div class="dev-box dev-3">
-                              <div class="overlay overlay3">
+                           <div class="dev-box flip-v">
+                              <div class="dev-3 front"></div>
+                              <div class="overlay overlay3 back">
                                 <div class="overlay-container">
                                    <div class="name">treeHollow</div> 
                                    <div class="github"></div>
@@ -60,8 +64,9 @@
                                 </div>
                               </div> 
                            </div>
-                           <div class="dev-box dev-4">
-                              <div class="overlay overlay4">
+                           <div class="dev-box flip-h">
+                              <div class="dev-4 front"></div>
+                              <div class="overlay overlay4 back">
                                 <div class="overlay-container">
                                   <div class="name">UWLife.com</div> 
                                   <div class="github"></div>
@@ -69,8 +74,9 @@
                                 </div>
                               </div> 
                            </div>
-                           <div class="dev-box dev-5">
-                              <div class="overlay overlay5">
+                           <div class="dev-box flip-v">
+                              <div class="dev-5 front"></div>
+                              <div class="overlay overlay5 back">
                                <div class="overlay-container">
                                  <div class="name">Colordoscope</div> 
                                  <div class="github"></div>
@@ -78,8 +84,9 @@
                                </div>
                               </div> 
                            </div>
-                           <div class="dev-box dev-6">
-                              <div class="overlay overlay6">
+                           <div class="dev-box flip-h">
+                              <div class="dev-6 front"></div>
+                              <div class="overlay overlay6 back">
                                 <div class="overlay-container">
                                   <div class="name">treeHollow</div> 
                                   <div class="github"></div>
@@ -92,7 +99,11 @@
 
 
             <div class="swiper-slide design" ></div>
-            <div class="swiper-slide about" ></div>
+            <div class="swiper-slide about" >
+              <div>
+                
+              </div>
+            </div>
             <div class="swiper-slide contact" >
               <div class="contact-wrapper">
             	<form class="contact-form" action="https://formspree.io/yujiac8000@gmail.com">
@@ -116,7 +127,6 @@
                     <div class="success">Message sent</div>
                   </div>
                 </div>
-                <div id="canvas2"></div>
             </div>
         </div>
     </div>

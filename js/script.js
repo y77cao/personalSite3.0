@@ -29,6 +29,7 @@ $(function() {
     $('.logo').css('background-image', 'url(./img/tri-black.png)');
 	});
 });
+/*
 
 $(function(){
   $('.dev-1').hover(function() {
@@ -67,7 +68,17 @@ $(function(){
     $(this).children('.overlay').hide();
   });
 }) 
+*/
 
+$(function(){
+    $(".flip-h").flip({
+        trigger: 'hover'
+    });
+    $(".flip-v").flip({
+        trigger: 'hover',
+        axis: 'x'
+    });
+});
 
 $(function() {
      $(".contact-form").submit(function(e) {
