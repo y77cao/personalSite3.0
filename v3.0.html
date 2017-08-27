@@ -4,7 +4,7 @@
 		<title>YC</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-		<link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="./style/style.css">
 		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
         <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
@@ -32,34 +32,64 @@
             </div>
             
             <div class="swiper-slide dev" >
-            	<div class="swiper-container-2">
-                     <div class="swiper-wrapper">
-                           <div class="swiper-slide dev-slide-1">
-                           	  <div>Colordoscope</div>
-                           	  <img src="">
+            	  <div class="dev-project-container clearfix">
+                           <div class="dev-box dev-1">
+                              <div class="overlay overlay1">
+                                <div class="overlay-container">
+                                   <div class="name">Colordoscope</div> 
+                                   <div class="github"></div>
+                                   <div class="link"></div> 
+                                </div>   
+                              </div> 
                            </div>
-                           <div class="swiper-slide dev-slide-2">
-                           	  <div>GiveMeSomething</div>
-                           	  <img src="">
+                           <div class="dev-box dev-2">
+                              <div class="overlay overlay2">
+                                <div class="overlay-container">
+                                  <div class="name">giveMeSomething</div> 
+                                  <div class="github"></div>
+                                  <div class="link"></div>
+                                </div>
+                              </div> 
                            </div>
-                           <div class="swiper-slide dev-slide-3">
-                           	  <div>TreeHollow</div>
-                           	  <img src="">
+                           <div class="dev-box dev-3">
+                              <div class="overlay overlay3">
+                                <div class="overlay-container">
+                                   <div class="name">treeHollow</div> 
+                                   <div class="github"></div>
+                                   <div class="link"></div>
+                                </div>
+                              </div> 
                            </div>
-                           <div class="swiper-slide">
-                              <div>UWLife.com</div>
-                              <img src="">
+                           <div class="dev-box dev-4">
+                              <div class="overlay overlay4">
+                                <div class="overlay-container">
+                                  <div class="name">UWLife.com</div> 
+                                  <div class="github"></div>
+                                  <div class="link"></div>
+                                </div>
+                              </div> 
                            </div>
-                           <div class="swiper-slide">
-                           	  <div>ChamberCrawler3000</div>
-                           	  <img src="">
+                           <div class="dev-box dev-5">
+                              <div class="overlay overlay5">
+                               <div class="overlay-container">
+                                 <div class="name">Colordoscope</div> 
+                                 <div class="github"></div>
+                                 <div class="link"></div>
+                               </div>
+                              </div> 
                            </div>
-                     </div>
-                     <div class="pagination-wrapper">
-                     	<div class="swiper-pagination-2"></div>
-                     </div>
+                           <div class="dev-box dev-6">
+                              <div class="overlay overlay6">
+                                <div class="overlay-container">
+                                  <div class="name">treeHollow</div> 
+                                  <div class="github"></div>
+                                  <div class="link"></div>
+                                </div>
+                              </div> 
+                           </div>
                 </div>
-             </div>
+            </div>
+
 
             <div class="swiper-slide design" ></div>
             <div class="swiper-slide about" ></div>
@@ -91,23 +121,15 @@
         </div>
     </div>
 
-    <script src="./three.min.js"></script>
-    <script src="./Projector.js"></script>
-	<script src="./CanvasRenderer.js"></script>
-	<script src="./wavingParticlesCanvas.js"></script>
-	<script src="./script.js"></script>
+    <script src="./js/three.min.js"></script>
+    <script src="./js/Projector.js"></script>
+	<script src="./js/CanvasRenderer.js"></script>
+	<script src="./js/wavingParticlesCanvas.js"></script>
+	<script src="./js/script.js"></script>
 
     <script>
     var swiper1 = new Swiper('.swiper-container-1', {
         effect: 'fade'
-    });
-
-    var swiper2 = new Swiper('.swiper-container-2', {
-         direction: 'vertical',
-         slidesPerView: 1,
-         mousewheelControl: true,
-         pagination: '.swiper-pagination-2',
-         paginationType: 'fraction',
     });
     </script>
 	</body>
