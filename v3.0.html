@@ -101,7 +101,8 @@
             <div class="swiper-slide design" ></div>
             <div class="swiper-slide about" >
               <div>
-                
+                <div class="me"></div>
+                <div class="header">Hi, my name is Yujia Cao and I am in my 3A term studying Computer Science at University of Waterloo.</div>
               </div>
             </div>
             <div class="swiper-slide contact" >
@@ -147,7 +148,12 @@
 
     <script>
     var swiper1 = new Swiper('.swiper-container-1', {
-        effect: 'fade'
+        effect: 'fade',
+        simulateTouch: 'false',
+        shortSwipes: 'false',
+        longSwipes: 'false',
+        followFinger: 'false',
+        onlyExternal: 'true'
     });
     </script>
 	</body>
