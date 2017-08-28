@@ -285,6 +285,21 @@
 				text-align: center;
 			}
 
+			.bg {
+				position: absolute;
+				left: 0; 
+				right: 0; 
+				top: 0; 
+				bottom: 0; 
+				width: 100%;
+				height: 100%;
+				background: url("../img/waving-circle2.gif") no-repeat center center;
+				background-size: cover;
+				z-index: -1;
+				opacity: 0.6;
+
+			}
+
 			.contact {
 				background-color: #fff;
 			}
@@ -292,6 +307,7 @@
 
 			.result {
 				margin: 5%;
+				margin-bottom: 0;
 				font-size: 2vh;
              }
 
@@ -329,4 +345,82 @@
              	border: none;
              	outline: none;
              	border: 1px solid black;
+             }
+
+             .contact .social {
+             	width: 100%;
+             	height: 30%;
+             }
+
+             .contact .social * {
+             	display: inline-block;
+             	transition: all 0.5s ease;
+                -moz-transition: all 0.5s ease;
+                -webkit-transition: all 0.5s ease;
+                -o-transition: all 0.5s ease;
+                -ms-transition: all 0.5s ease;
+             }
+
+             .contact .social .github {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/github-grey.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .github:hover {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/github-hover.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .linkedin {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/linkedin-grey.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .linkedin:hover {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/linkedin-hover.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .ig {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/ig-grey.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .ig:hover {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/ig-hover.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .pin {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/pin-grey.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
+             }
+
+             .contact .social .pin:hover {
+             	width: 80px;
+				height: 80px;
+				background: url("../img/pin-hover.png") no-repeat center center;
+				background-size: contain;
+				margin: 0;
              }
