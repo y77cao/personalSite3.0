@@ -37,6 +37,14 @@
              background-color: #000;
             }
 
+            .swiper-container-2, .swiper-wrapper, .swiper-slide {
+             width: 100%;
+             height: 100%;
+             position: absolute;
+             color:#000;
+             background-color: #fff;
+            }
+
 			#canvas, #canvas2 {
 				width: 100%;
 				height: 100%;
@@ -149,8 +157,19 @@
 		     top: 0; 
 		     bottom: 0; 
 		     margin: auto;
-		     overflow: auto;
             }
+
+            @media screen and (min-width: 398px) {
+                .dev-project-container {
+                  overflow: scroll;
+                }
+              }
+
+              @media screen and (min-width: 768px) {
+                .dev-project-container {
+                  overflow: visible;
+                }
+              }
 
 
             .dev-box {
@@ -241,10 +260,11 @@
 				background-size: cover;
 			}
 
+			.dev-box:hover {
+				z-index: 999;
+			}
 
-
-
-			@media screen and (min-width: 400px) {
+			@media screen and (min-width: 398px) {
                 .dev-box, .overlay {
                   width: 100%;
                 }
@@ -265,7 +285,74 @@
               }
 
 			.design {
-			    background-color: #000;
+			    background-color: #fff;
+			}
+
+			.des-container {
+				width: 100%;
+				height: 100%;
+			}
+
+			.des-container * {
+				display: inline-block;
+			}
+
+
+			.design .des-1 .mockup {
+				background: url("../img/super-math-mockup.png") no-repeat center center;
+				background-size: contain;
+			    width: 70%;
+			    height: 70%;
+			    margin: 0;
+
+			}
+
+			.design .des-2 .mockup {
+				background: url("../img/schedule-hero-mockup-2.png") no-repeat center center;
+				background-size: contain;
+			    width: 70%;
+			    height: 70%;
+			    position: absolute;
+				left: 0; 
+		        right: 0; 
+		        top: 0; 
+		        bottom: 0; 
+		        margin: auto;
+		        margin-left: 0;
+
+			}
+
+			.design .des-3 .mockup {
+				background: url("../img/galaxy-mockup.png") no-repeat center center;
+				background-size: contain;
+			    width: 70%;
+			    height: 70%;
+			    position: absolute;
+				left: 0; 
+		        right: 0; 
+		        top: 0; 
+		        bottom: 0; 
+		        margin: auto;
+		        margin-left: 0;
+
+			}
+
+			  @media screen and (min-width: 398px) {
+                .design .des-1 .mockup, .design .des-2 .mockup, .design .des-3 .mockup {
+                  width: 100%;
+                  height: 70%;
+                }
+              }
+
+              @media screen and (min-width: 768px) {
+                .design .des-1 .mockup, .design .des-2 .mockup, .design .des-3 .mockup {
+                  width: 70%;
+                  height: 70%;
+                }
+              }
+
+			.design .app-name {
+				font-size: 4em;
 			}
 
 			.about {

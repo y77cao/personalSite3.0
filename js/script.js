@@ -13,8 +13,8 @@ $(function() {
 	
 	$('.nav-design').click(function(){
     swiper1.slideTo( $('.design').index(),1000,false );
-    $('.nav').css('color', 'white');
-    $('.logo').css('background-image', 'url(./img/tri.png)');
+    $('.nav').css('color', 'black');
+    $('.logo').css('background-image', 'url(./img/tri-black.png)');
 	});
 	
 	$('.nav-about').click(function(){

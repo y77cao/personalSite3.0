@@ -98,7 +98,33 @@
             </div>
 
 
-            <div class="swiper-slide design" ></div>
+            <div class="swiper-slide design" >
+                <div class="swiper-container-2">
+                      <div class="swiper-wrapper">
+                         <div class="swiper-slide des-1">
+                             <div class="des-container">
+                                <div class="mockup"></div>
+                                <div class="app-name">SuperMath</div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide des-2">
+                            <div class="des-container">
+                                <div class="mockup"></div>
+                                <div class="app-name">ScheduleHero</div>
+                            </div>
+                         </div>
+                         <div class="swiper-slide des-3">
+                             <div class="des-container"> 
+                                <div class="mockup"></div>
+                                <div class="app-name">Personal Galaxy</div>
+                             </div>
+                         </div>
+                         <div class="swiper-slide">Slide 4</div>
+                         <div class="swiper-slide">Slide 5</div>
+                     </div>
+              </div>
+            </div>
+
             <div class="swiper-slide about" >
               <div>
                 <div class="me"></div>
@@ -154,6 +180,12 @@
         longSwipes: 'false',
         followFinger: 'false',
         onlyExternal: 'true'
+    });
+
+    var swiper2 = new Swiper('.swiper-container-2', {
+         mousewheelControl: true,
+         parallax: true,
+         speed: 600,
     });
     </script>
 	</body>
