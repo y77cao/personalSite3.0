@@ -39,8 +39,8 @@
                               <div class="overlay overlay1 back">
                                 <div class="overlay-container">
                                    <div class="name">Colordoscope</div> 
-                                   <div class="github"></div>
-                                   <div class="link"></div> 
+                                   <a class="github" href="https://github.com/y77cao/Colordoscope"></a>
+                                   <a class="link" href="http://colordoscope.herokuapp.com/"></a> 
                                 </div>   
                               </div> 
                            </div>
@@ -49,8 +49,8 @@
                               <div class="overlay overlay2 back">
                                 <div class="overlay-container">
                                   <div class="name">giveMeSomething</div> 
-                                  <div class="github"></div>
-                                  <div class="link"></div>
+                                  <a class="github"></a>
+                                  <a class="link"></a>
                                 </div>
                               </div> 
                            </div>
@@ -59,8 +59,8 @@
                               <div class="overlay overlay3 back">
                                 <div class="overlay-container">
                                    <div class="name">treeHollow</div> 
-                                   <div class="github"></div>
-                                   <div class="link"></div>
+                                   <a class="github"></a>
+                                   <a class="link"></a>
                                 </div>
                               </div> 
                            </div>
@@ -69,8 +69,8 @@
                               <div class="overlay overlay4 back">
                                 <div class="overlay-container">
                                   <div class="name">UWLife.com</div> 
-                                  <div class="github"></div>
-                                  <div class="link"></div>
+                                  <a class="github"></a>
+                                  <a class="link"></a>
                                 </div>
                               </div> 
                            </div>
@@ -79,8 +79,8 @@
                               <div class="overlay overlay5 back">
                                <div class="overlay-container">
                                  <div class="name">Colordoscope</div> 
-                                 <div class="github"></div>
-                                 <div class="link"></div>
+                                 <a class="github"></a>
+                                 <a class="link"></a>
                                </div>
                               </div> 
                            </div>
@@ -89,8 +89,8 @@
                               <div class="overlay overlay6 back">
                                 <div class="overlay-container">
                                   <div class="name">treeHollow</div> 
-                                  <div class="github"></div>
-                                  <div class="link"></div>
+                                  <a class="github"></a>
+                                  <a class="link"></a>
                                 </div>
                               </div> 
                            </div>
@@ -122,13 +122,20 @@
                          <div class="swiper-slide">Slide 4</div>
                          <div class="swiper-slide">Slide 5</div>
                      </div>
+                     <div class="swiper-pagination swiper-pagination-black"></div>
               </div>
             </div>
 
             <div class="swiper-slide about" >
               <div>
                 <div class="me"></div>
-                <div class="header">Hi, my name is Yujia Cao and I am in my 3A term studying Computer Science at University of Waterloo.</div>
+                <div class="me2"></div>
+                <p class="header">Hi, my name is <span>Yujia Cao</span> and I am in my 3A term studying <span>Computer Science</span> at University of Waterloo.
+                My passions are <span>full stack web development</span>, computer graphics, <span>UI/UX design</span>, fashion, movies, skiing...(list goes on)
+                </p>
+                <p class="header2">
+                  Fun facts: </br>1. I spend <span>A LOT</span> of time on Instagram. </br>2. I don't like <span>gummy bears</span>...(please don't judge me on this) </br>3. I don't know how to write a good <span>self introduction</span>...please contact me to know more! I am better at <span>chatting</span>:)
+                </p>
               </div>
             </div>
             <div class="swiper-slide contact" >
@@ -168,9 +175,10 @@
 
     <script src="./js/three.min.js"></script>
     <script src="./js/Projector.js"></script>
-	<script src="./js/CanvasRenderer.js"></script>
-	<script src="./js/wavingParticlesCanvas.js"></script>
-	<script src="./js/script.js"></script>
+	  <script src="./js/CanvasRenderer.js"></script>
+	  <script src="./js/wavingParticlesCanvas.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.1.21/tilt.jquery.min.js"></script>
+	  <script src="./js/script.js"></script>
 
     <script>
     var swiper1 = new Swiper('.swiper-container-1', {
@@ -186,7 +194,15 @@
          mousewheelControl: true,
          parallax: true,
          speed: 600,
+         pagination: '.swiper-pagination',
+         paginationClickable: true,
     });
+
+    $('.des-container').tilt({
+      maxTilt: 15,
+      perspective: 800,
+      speed: 500
+    })
     </script>
 	</body>
 </html>

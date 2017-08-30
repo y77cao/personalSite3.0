@@ -175,7 +175,7 @@
             .dev-box {
             	float: left;
             	width: 40%;
-            	height: 30%;
+            	height: 33%;
             	box-sizing: border-box;
             	text-align: center;
             	position: relative;
@@ -370,37 +370,79 @@
               }
 
 			.about {
-				background-color: #000;
+				background-color: #fff;
 			}
 
 			.about .me {
 				width: 50%;
-				height: 50%;
+				height: 100%;
 				position: absolute;
-				left: 5%; 
+				left: 0; 
 				right: 0; 
-				top: 20%; 
+				top: 0; 
 				bottom: 0; 
 				margin: auto;
 				margin-top: 0;
 				margin-left: 0;
 				background: url("../img/me.jpg") no-repeat center center;
-				background-size: contain;
+				background-size: cover;
+				z-index: 10;
 			}
 
-			.about .header {
-				z-index: 999;
-				width: 30%;
-				height: 50%;
+			.about .me2 {
+				width: 50%;
+				height: 100%;
 				position: absolute;
-				left: 40%; 
+				left: 0; 
 				right: 0; 
 				top: 0; 
 				bottom: 0; 
 				margin: auto;
-				margin-left: 0;
-				font-size: 4vh;
+				margin-top: 0;
+				margin-right: 0;
+				background: url("../img/me2.jpg") no-repeat center center;
+				background-size: cover;
+				opacity: 0;
+				z-index: 10;
+			}
 
+			.about .header {
+				width: 30%;
+				height: 80%;
+				position: absolute;
+				left: 55%; 
+				right: 0; 
+				top: 5%; 
+				bottom: 0; 
+				margin: auto;
+				margin-left: 0;
+				font-size: 2em;
+				text-align: left;
+			    color: #000;
+			    line-height: 160%;
+
+			}
+
+			.about .header2 {
+				width: 30%;
+				height: 80%;
+				position: absolute;
+				left: 15%; 
+				right: 0; 
+				top: 5%; 
+				bottom: 0; 
+				margin: auto;
+				margin-left: 0;
+				font-size: 2em;
+				text-align: right;
+			    color: #000;
+			    line-height: 160%;
+
+			}
+
+			.about span {
+				color: #99f9ff;
+				background-color: #000;
 			}
 
 			.contact-wrapper {

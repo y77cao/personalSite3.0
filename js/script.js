@@ -29,46 +29,23 @@ $(function() {
     $('.logo').css('background-image', 'url(./img/tri-black.png)');
 	});
 });
-/*
 
 $(function(){
-  $('.dev-1').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
+  $('.me').hover(function() {
+    $('.me').fadeTo("fast",1);
+    $('.me2').fadeTo("fast",0);
+    $('.nav').css('color', 'white');
+    $('.logo').css('background-image', 'url(./img/tri.png)');
   });
 
-  $('.dev-2').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
-  });
-
-  $('.dev-3').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
-  });
-
-  $('.dev-4').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
-  });
-
-  $('.dev-5').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
-  });
-
-  $('.dev-6').hover(function() {
-    $(this).children('.overlay').show();
-  },function(){
-    $(this).children('.overlay').hide();
+  $('.me2').hover(function() {
+    $('.me2').fadeTo("fast",1);
+    $('.me').fadeTo("fast", 0);
+    $('.nav').css('color', 'black');
+    $('.logo').css('background-image', 'url(./img/tri-black.png)');
   });
 }) 
-*/
+
 
 $(function(){
     $(".flip-h").flip({
