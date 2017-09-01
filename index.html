@@ -209,11 +209,13 @@
          paginationClickable: true,
     });
 
-    $('.des-container').tilt({
+    if(!$.browser.safari) {
+   $('.des-container').tilt({
       maxTilt: 15,
       perspective: 800,
       speed: 500
     })
+    }
     </script>
 	</body>
 </html>
