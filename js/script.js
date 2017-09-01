@@ -59,16 +59,12 @@ $(function(){
 
 $(function() {
      $(".contact-form").submit(function(e) {
-      var name = $('.name')
-      var email = $('.email')
-      var message = $('.message')
+      var name = $('.name');
+      var email = $('.email');
+      var message = $('.message');
+      console.log(name.val()+" "+email.val()+" "+message.val());
     
-      if(name.val() == "" || email.val() == "" || message.val() == "") {
-        $('.fail').fadeToggle(400);
-        return false;
-      }
-      else {
-        $.ajax({
+      $.ajax({
           method: 'POST',
           url: '//formspree.io/yujiac8000@gmail.com',
           data: $('.contact-form').serialize(),
@@ -77,10 +73,9 @@ $(function() {
         e.preventDefault();
         $(this).get(0).reset();
         $('.success').fadeToggle(400);
-      }
     });
   
-  $('.submit-fail, .submit-success').click(function() {
+  $('.fail, .success').click(function() {
     $(this).hide();
   })
 });
