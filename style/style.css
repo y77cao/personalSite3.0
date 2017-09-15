@@ -168,7 +168,7 @@
 		     margin: auto;
             }
 
-            @media screen and (min-width: 398px) {
+            @media screen and (min-width: 300px) {
                 .dev-project-container {
                   overflow: scroll;
                 }
@@ -273,7 +273,7 @@
 				z-index: 999;
 			}
 
-			@media screen and (min-width: 398px) {
+			@media screen and (min-width: 300px) {
                 .dev-box, .overlay {
                   width: 100%;
                 }
@@ -328,7 +328,7 @@
 
 			}
 
-			  @media screen and (min-width: 398px) {
+			  @media screen and (min-width: 300px) {
                 .design .des-1 .mockup, .design .des-2 .mockup, .design .des-3 .mockup,
                 .design .des-4 .mockup  {
                   width: 100%;
@@ -396,7 +396,7 @@
 				background-color: #000;
 			}
 
-			@media screen and (min-width: 398px) {
+			@media screen and (min-width: 300px) {
                 .about .me {
                   position: absolute;
 				  left: 0; 
