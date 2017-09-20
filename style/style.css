@@ -69,7 +69,7 @@
                 -ms-transition: all 1s ease;
 			}
 
-			.nav>div:hover:not(:first-child) {
+			.nav *:hover:not(:first-child) {
 			    color: #99f9ff;
 				margin-left: 5%;
 				transition: all 1s ease;
@@ -77,6 +77,14 @@
                 -webkit-transition: all 1s ease;
                 -o-transition: all 1s ease;
                 -ms-transition: all 1s ease;
+			}
+
+			.nav-click-white {
+				color: white;
+			}
+
+			.nav-click-black {
+				color: black;
 			}
 
 			#resume-link:hover {
@@ -91,7 +99,7 @@
 			.logo {
 				width: 50px;
 				height: 50px;
-				background-image: url("../img/tri.png");
+				background-image: url("../img/tri-3d.png");
 				background-size: cover;
 				transition: all 1s ease;
                 -moz-transition: all 1s ease;

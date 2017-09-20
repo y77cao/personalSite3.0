@@ -2,31 +2,31 @@ $(function() {
 	$('.logo').click(function(){
     swiper1.slideTo( $('.main').index(),1000,false );
     $('.nav *').css('color', 'white');
-    $('.logo').css('background-image', 'url(./img/tri.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d.png)');
 	});
 
 	$('.nav-dev').click(function(){
     swiper1.slideTo( $('.dev').index(),1000,false );
     $('.nav *').css('color', 'black');
-    $('.logo').css('background-image', 'url(./img/tri-black.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d-black.png)');
 	});
 	
 	$('.nav-design').click(function(){
     swiper1.slideTo( $('.design').index(),1000,false );
     $('.nav *').css('color', 'black');
-    $('.logo').css('background-image', 'url(./img/tri-black.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d-black.png)');
 	});
 	
 	$('.nav-about').click(function(){
     swiper1.slideTo( $('.about').index(),1000,false );
     $('.nav *').css('color', 'white');
-    $('.logo').css('background-image', 'url(./img/tri.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d.png)');
 	});
 	
 	$('.nav-contact').click(function(){
     swiper1.slideTo( $('.contact').index(),1000,false );
     $('.nav *').css('color', 'black');
-    $('.logo').css('background-image', 'url(./img/tri-black.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d-black.png)');
 	});
 });
 
@@ -35,14 +35,14 @@ $(function(){
     $('.me').fadeTo("fast",1);
     $('.me2').fadeTo("fast",0);
     $('.nav *').css('color', 'white');
-    $('.logo').css('background-image', 'url(./img/tri.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d.png)');
   });
 
   $('.me2').hover(function() {
     $('.me2').fadeTo("fast",1);
     $('.me').fadeTo("fast", 0);
     $('.nav *').css('color', 'black');
-    $('.logo').css('background-image', 'url(./img/tri-black.png)');
+    $('.logo').css('background-image', 'url(./img/tri-3d-black.png)');
   });
 }) 
 
